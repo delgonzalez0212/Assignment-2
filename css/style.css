@@ -4,39 +4,53 @@
     --secondary-text: #626262;
     --card-background: #ffffff;
     --border-color: #242424;
-    --accent: #b8a28b;
+    --button-background: #242424;
+    --button-text: #ffffff;
 }
 
+
+/* Universal selector obligatorio */
 * {
     box-sizing: border-box;
 }
 
+
+/* Tamaño base de referencia */
 html {
     font-size: 16px;
 }
 
+
+/* BODY */
 body {
-background-color: var(--background);
-color: var(--text);
-margin: 0;
-font-size: 1rem;
+    background-color: var(--background);
+    color: var(--text);
+
+    margin: 0;
+
+    font-size: 1rem;
 }
+
+
+/* HEADER */
 header {
-width: 90%;
+    width: 90%;
 
-margin: 2rem auto;
-padding: 3rem;
+    margin: 2rem auto;
+    padding: 3rem;
 
-text-align: center;
+    text-align: center;
 
-background-color: var(--card-background);
+    background-color: var(--card-background);
 
-border: 1px solid var(--border-color);
-border-radius: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
 
-box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08);
 }
 
+
+/* TITULO PRINCIPAL */
 h1 {
     margin: 0 0 1rem 0;
 
@@ -44,6 +58,8 @@ h1 {
     font-weight: 700;
 }
 
+
+/* TEXTO DEL HEADER */
 header p {
     font-size: 1.1rem;
     font-style: italic;
@@ -51,20 +67,24 @@ header p {
     color: var(--secondary-text);
 }
 
+
+/* BOTONES */
 button {
     margin: 1em;
     padding: 1em 2em;
 
-    background-color: var(--text);
-    color: white;
+    background-color: var(--button-background);
+    color: var(--button-text);
 
-    border: 1px solid var(--text);
+    border: 1px solid var(--border-color);
     border-radius: 30px;
 
     font-size: 1rem;
     font-weight: 700;
 }
 
+
+/* MAIN */
 main {
     width: 90%;
 
@@ -73,11 +93,15 @@ main {
     text-align: center;
 }
 
+
+/* TITULO DE PROYECTOS */
 h2 {
     font-size: 2rem;
     font-weight: 700;
 }
 
+
+/* INTRODUCCION */
 .intro {
     margin-bottom: 2rem;
 
@@ -86,44 +110,79 @@ h2 {
     color: var(--secondary-text);
 }
 
+
+/* CARDS */
 .card {
-width: 80%;
-margin: 2rem auto;
-padding: 2rem;
-text-align: left;
-background-color: var(--card-background);
-border: 1px solid var(--border-color);
-border-radius: 20px;
-box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+    width: 70%;
+
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+
+    text-align: left;
+
+    background-color: var(--card-background);
+
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
 }
 
+
+/* TITULO DE CADA CARD */
 .card h3 {
-margin-top: 0;
-font-size: 1.5rem;
-font-weight: 700;
+    margin: 0 0 1rem 0;
+
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
+
+/* TEXTO DE CADA CARD */
 .card p {
-font-size: 1rem;
+    margin: 0.5rem 0;
+
+    font-size: 1rem;
 }
 
+
+/* DETALLE */
 .details {
-color: var(--secondary-text);
+    color: var(--secondary-text);
 
-font-style: italic;
+    font-style: italic;
 }
 
+
+/* FOOTER */
 footer {
-height: 100px;
-padding: 2rem;
-text-align: center;
-background-color: var(--text);
-color: white;
+    height: 100px;
+
+    padding: 2rem;
+
+    text-align: center;
+
+    background-color: var(--text);
+    color: white;
 }
+
+
+/* DARK THEME */
 .dark-theme {
     --background: #1c1c1c;
     --text: #f1eee8;
     --secondary-text: #bdbdbd;
     --card-background: #292929;
     --border-color: #777777;
+    --button-background: #f1eee8;
+    --button-text: #1c1c1c;
+}
+
+
+/* BOTONES EN DARK THEME */
+.dark-theme button {
+    background-color: var(--button-background);
+    color: var(--button-text);
+
+    border: 1px solid var(--button-background);
 }
