@@ -6,6 +6,10 @@
     --border-color: #242424;
     --button-background: #242424;
     --button-text: #ffffff;
+
+    --pink-strong: #ff477e;
+    --pink-medium: #ff85a1;
+    --pink-soft: #f7cad0;
 }
 
 
@@ -56,6 +60,8 @@ h1 {
 
     font-size: 3rem;
     font-weight: 700;
+
+    color: var(--pink-strong);
 }
 
 
@@ -73,16 +79,15 @@ button {
     margin: 1em;
     padding: 1em 2em;
 
-    background-color: var(--button-background);
-    color: var(--button-text);
+    background-color: var(--pink-strong);
+    color: white;
 
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--pink-strong);
     border-radius: 30px;
 
     font-size: 1rem;
     font-weight: 700;
 }
-
 
 /* MAIN */
 main {
@@ -98,6 +103,8 @@ main {
 h2 {
     font-size: 2rem;
     font-weight: 700;
+
+    color: var(--pink-medium);
 }
 
 
@@ -131,10 +138,12 @@ h2 {
 
 /* TITULO DE CADA CARD */
 .card h3 {
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.8rem 0;
 
     font-size: 1.5rem;
     font-weight: 700;
+
+    color: var(--pink-strong);
 }
 
 
@@ -148,7 +157,7 @@ h2 {
 
 /* DETALLE */
 .details {
-    color: var(--secondary-text);
+    color: var(--pink-medium);
 
     font-style: italic;
 }
@@ -174,8 +183,9 @@ footer {
     --secondary-text: #bdbdbd;
     --card-background: #292929;
     --border-color: #777777;
-    --button-background: #f1eee8;
-    --button-text: #1c1c1c;
+
+    --button-background: #ff477e;
+    --button-text: #ffffff;
 }
 
 
